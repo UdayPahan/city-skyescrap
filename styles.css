@@ -1,5 +1,4 @@
 *{
-    border:1px solid black;
     box-sizing:border-box;
 }
 
@@ -16,7 +15,10 @@ body{
     --window-color1: #BF9D77;
     --window-color2: #E49759;
     --window-color3: #B072D8;
+   
 }
+
+              
 .background-building,.foreground-building{
     width:100%;
     height:100%;
@@ -36,7 +38,8 @@ body{
 
 .window-wrap{
     display:flex;
-    justify-content: space-evenly;
+    flex-wrap:wrap;
+    justify-content: space-between;
     align-items:center;
 }
 
@@ -203,6 +206,10 @@ border-right:2vh solid transparent;
     width:100%;
     height:20%;
     background-color: var(--building-color3);
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    align-items: center;
 }
 
 .fb3c{
@@ -215,4 +222,12 @@ border-right:2vh solid transparent;
     width:100%;
     height:50%;
     background-color: var(--building-color3);
+    
+}
+
+.fb3-window{
+    height:20%;
+    width:30%;
+    background-color: var(--window-color3);
+    border-radius:50%;
 }
